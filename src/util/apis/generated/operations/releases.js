@@ -1805,7 +1805,7 @@ function _getLatestByUser(releaseId, ownerName, appName, options, callback) {
       }
     }
   }
-  httpRequest.body = null;
+  httpRequest.body = '';
   // Send Request
   return client.pipeline(httpRequest, (err, response, responseBody) => {
     if (err) {
